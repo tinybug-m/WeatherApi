@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WcucwN9hdm8gvXTGkypJJH7ta4JNwqM4t0poyHwtW0IkB1EFZXHKeDk0aKXYl8rBxDw5zrtSIaUyVz4LxCP1VA==",
+  "dgSpecHash": "hoKLjYahJmY+MxotCgZjWMKLPaFnfa/2h2ebKCoYh3a2ZhmWr/ilhkuvd2lkwun7hQ2Iso2ZVO5MkZ3/vPfHVg==",
   "success": true,
-  "projectFilePath": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/..csproj",
+  "projectFilePath": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/WeatherApi.csproj",
   "expectedPackageFiles": [
     "/home/tinybug/.nuget/packages/microsoft.aspnetcore.openapi/8.0.21/microsoft.aspnetcore.openapi.8.0.21.nupkg.sha512",
     "/home/tinybug/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

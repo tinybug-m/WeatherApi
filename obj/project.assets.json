@@ -487,9 +487,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/..csproj",
-      "projectName": ".",
-      "projectPath": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/..csproj",
+      "projectUniqueName": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/WeatherApi.csproj",
+      "projectName": "WeatherApi",
+      "projectPath": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/WeatherApi.csproj",
       "packagesPath": "/home/tinybug/.nuget/packages/",
       "outputPath": "/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/obj/",
       "projectStyle": "PackageReference",
