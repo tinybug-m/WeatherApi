@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -16,13 +18,7 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/", () => "API is running");
 
 var weatherService = new WeatherService();
+app.MapGet("/weather", async ([FromQuery] string city) => await weatherService.GetWeather(city));
 
-app.MapGet("/weather", async (string? city) =>
-{
-    if (string.IsNullOrWhiteSpace(city))
-        return "Please enter a city";
-
-    return await weatherService.GetWeather(city);
-});
 
 app.Run();
