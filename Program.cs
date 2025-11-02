@@ -14,4 +14,14 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/", () => "API is running");
 
+var weatherService = new WeatherService();
+
+app.MapGet("/weather", async (string? city) =>
+{
+    if (string.IsNullOrWhiteSpace(city))
+        return "Please enter a city";
+
+    return await weatherService.GetWeather(city);
+});
+
 app.Run();
