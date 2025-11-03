@@ -2,11 +2,12 @@ public class WeatherService
 {
     private readonly HttpClient fetch = new(); // :) js is alive 
 
+
     public async Task<CityAirAndWeatherResult?> GetWeather(string city)
     {
         var apiKey = "bbf753e64a697f857269e43e6a938c7f";
         var url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
-        var weather = await fetch.GetFromJsonAsync<WeatherResult>(url);
+        var weather = await fetch.GetFromJsonAsync<WeatherResponse>(url);
         if (weather is null)
             return null;
 
@@ -15,7 +16,7 @@ public class WeatherService
         if (weather is null)
             return null;
 
-        var WeatherResponse = new WeatherResult
+        var WeatherResponse = new WeatherResponse
         {
             Name = city,
             Main = weather.Main,
