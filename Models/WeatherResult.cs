@@ -1,4 +1,4 @@
-// WeatherResult.cs
+// We can use Records instead of classes but i am happy now 
 public class WeatherResult
 {
     public required Coordinates Coord { get; set; }
