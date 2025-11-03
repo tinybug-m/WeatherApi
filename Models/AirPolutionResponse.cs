@@ -1,4 +1,4 @@
-public class AirPollutionResult
+public class AirPollutionResponse
 {
     public List<PollutionEntry> List { get; set; } = [];
 
