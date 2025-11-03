@@ -4,7 +4,6 @@ public class WeatherResponse
     public required Coordinates Coord { get; set; }
     public required MainWeather Main { get; set; }
     public required WindInfo Wind { get; set; }
-    public required string Name { get; set; }
 
     public class Coordinates
     {
