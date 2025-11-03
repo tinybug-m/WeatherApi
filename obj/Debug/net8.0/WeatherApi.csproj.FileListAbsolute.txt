@@ -31,3 +31,4 @@
 /home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/obj/Debug/net8.0/WeatherApi.pdb
 /home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/obj/Debug/net8.0/WeatherApi.genruntimeconfig.cache
 /home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/obj/Debug/net8.0/ref/WeatherApi.dll
+/home/tinybug/Documents/projects/Okala/dotnet/WeatherApi/obj/Debug/net8.0/WeatherApi.sourcelink.json

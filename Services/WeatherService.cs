@@ -3,7 +3,7 @@ public class WeatherService
     private readonly HttpClient fetch = new(); // :) js is alive 
 
 
-    public async Task<CityAirAndWeatherResult?> GetWeather(string city)
+    public async Task<CombinedWeatherResult?> GetWeather(string city)
     {
         var apiKey = "bbf753e64a697f857269e43e6a938c7f";
         var url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
@@ -29,7 +29,7 @@ public class WeatherService
             List = pollution.List
         };
 
-        return new CityAirAndWeatherResult
+        return new CombinedWeatherResult
         {
             Weather = WeatherResponse,
             AirPollution = PolutionResponse
