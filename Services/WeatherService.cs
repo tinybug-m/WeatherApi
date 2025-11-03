@@ -13,7 +13,7 @@ public class WeatherService
 
         url = $"https://api.openweathermap.org/data/2.5/air_pollution?lat={weather.Coord.Lat}&lon={weather.Coord.Lon}&appid={apiKey}";
         var pollution = await fetch.GetFromJsonAsync<AirPollutionResponse>(url);
-        if (weather is null)
+        if (pollution is null)
             return null;
 
         var WeatherResponse = new WeatherResponse
